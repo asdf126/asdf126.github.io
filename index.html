@@ -62,7 +62,7 @@ http://iavenjqasdf.tumblr.com/post/168953753279/free-to-use -->
 		<br>
 		
 		<div class="smashed" style="text-align: center;">
-			<video id="shocking" width="320" height="240" autoplay muted loop>
+			<video id="shocking" width="320" height="240" loop>
 				<source src="boosted ass cat.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
@@ -85,35 +85,17 @@ http://iavenjqasdf.tumblr.com/post/168953753279/free-to-use -->
 		</div>
 	</body>
 	<script type="text/javascript">
-		function toggleMute() {
-			var video=document.getElementById("shocking");
-
-			if(video.muted){
-				video.muted = false;
-			}
-			
-			else {
-				debugger;
-				video.muted = true;
-				video.play()
-			}
-		}
 		
 		function whatAMeme() {
 			alert("memes are illegal dude");
 			$(".smashed").css("visibility", "visible");
 			$("body").css("background-image", "url('https://emoji.slack-edge.com/T076A136X/thinkspinner/443551340c7aec57.png')");
 			$(".buttondude").css("display", "none");
+			setTimeout(function(){document.getElementById("shocking").play()}, 0)
 			setTimeout(function(){document.getElementById("shocking2").play()}, 500)
 			setTimeout(function(){document.getElementById("shocking3").play()}, 1000)
 			setTimeout(function(){document.getElementById("shocking4").play()}, 1500)
 			setTimeout(function(){document.getElementById("shocking5").play()}, 2000)
-			
-			setTimeout(toggleMute,3000);
 		}
-
-		$(document).ready(function(){
-			// meme
-		})
 	</script>
 </html>
